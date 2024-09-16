@@ -28,14 +28,28 @@
         >
       </div>
 
+      <hr class="spaced-hr"/>
+
+      <section class="section">
+        <ul>
+          <li>
+            <a href="special_message.html">A message from Lucian T.J. Mac-Fall</a>
+          </li>
+        </ul>
+        
+    
+
+      </section>
+
+
       <hr />
       <!-- Education Section -->
       <section class="section">
         <h2>Education</h2>
         <div class="subsection">
-          <h3 onclick="toggleVisibility('masters')">Imperial College London</h3>
+          <h3 onclick="toggleVisibility('masters', this)" data-toggle="plus">Imperial College London <span>+</span></h3>
           <p><strong>Masters in Computing</strong>, Oct 2023 – Present</p>
-          <div id="masters" class="content">
+          <div id="masters" class="content" style="display:none;">
             <ul>
               <li>
                 Relevant modules include: Software Systems Engineering,
@@ -60,34 +74,40 @@
           </div>
         </div>
         <div class="subsection">
-          <h3>University of Bristol</h3>
+          <h3 onclick="toggleVisibility('bachelors', this)" data-toggle="plus">University of Bristol <span>+</span></h3>
           <p>
             <strong
               >Bachelor of Engineering with First Class Honours in Mechanical
               Engineering</strong
             >, Sep 2019 – May 2022
           </p>
-          <ul>
-            <li>Institution of Mechanical Engineers Best Student Award.</li>
-            <li>
-              Relevant modules include: Engineering Maths, Dynamics and Control,
-              Thermofluids, Materials Engineering.
-            </li>
-            <li>
-              First-class classification project: "The use of hydrogels in PV
-              cooling under different conditions: an experimental study".
-            </li>
-          </ul>
+            <div id="bachelors" class="content" style="display:none;">
+            <ul>
+              <li>Institution of Mechanical Engineers Best Student Award.</li>
+              <li>
+                Relevant modules include: Engineering Maths, Dynamics and Control,
+                Thermofluids, Materials Engineering.
+              </li>
+              <li>
+                First-class classification project: "The use of hydrogels in PV
+                cooling under different conditions: an experimental study".
+              </li>
+            </ul>
+          </div>
         </div>
         <div class="subsection">
-          <h3>St Benedict's School</h3>
+          <h3 onclick="toggleVisibility('school', this)" data-toggle="plus">St Benedict's School <span>+</span></h3>
           <p><strong>A levels</strong>, 2019</p>
-          <ul>
-            <li>
-              A*A*A*A* in Maths, Further Maths, Physics, and Economics | Head
-              Boy 2018 – 2019
-            </li>
-          </ul>
+          <div id="school" class="content">
+            <ul>
+              <li>
+                A*A*A*A* in Maths, Further Maths, Physics, and Economics
+              </li>
+              <li>
+                Head Boy 2018 – 2019
+              </li>
+            </ul>
+          </div>
         </div>
       </section>
 
@@ -96,35 +116,39 @@
       <section class="section">
         <h2>Work Experience</h2>
         <div class="subsection">
-          <h3>Popin Tech</h3>
+          <h3 onclick="toggleVisibility('popin', this)" data-toggle="plus">Popin Tech <span>+</span></h3>
           <p><strong>Software Engineer</strong>, Feb 2023 – Sep 2023</p>
-          <ul>
-            <li>
-              Worked on full-stack features for a booking scheduler platform.
-            </li>
-            <li>
-              Collaborated with sales teams, improving user experience and
-              planning new features.
-            </li>
-            <li>
-              Developed front-end with Next.js, React (Typescript), and Material
-              UI, integrated with PostgreSQL (Prisma) and Firebase.
-            </li>
-          </ul>
+          <div id="popin" class="content">
+            <ul>
+              <li>
+                Worked on full-stack features for a booking scheduler platform.
+              </li>
+              <li>
+                Collaborated with sales teams, improving user experience and
+                planning new features.
+              </li>
+              <li>
+                Developed front-end with Next.js, React (Typescript), and Material
+                UI, integrated with PostgreSQL (Prisma) and Firebase.
+              </li>
+            </ul>
+          </div>
         </div>
         <div class="subsection">
-          <h3>RedEye</h3>
+          <h3 onclick="toggleVisibility('redeye', this)" data-toggle="plus">RedEye <span>+</span></h3>
           <p><strong>Internship</strong>, Jul 2021</p>
-          <ul>
-            <li>
-              Worked with client services, technical, and operations teams to
-              analyze customer email data.
-            </li>
-            <li>
-              Presented recommendations to HR on the future of the hybrid office
-              model.
-            </li>
-          </ul>
+          <div id="redeye" class="content">
+            <ul>
+              <li>
+                Worked with client services, technical, and operations teams to
+                analyze customer email data.
+              </li>
+              <li>
+                Presented recommendations to HR on the future of the hybrid office
+                model.
+              </li>
+            </ul>
+          </div>
         </div>
       </section>
 
